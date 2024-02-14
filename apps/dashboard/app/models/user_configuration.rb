@@ -77,7 +77,13 @@ class UserConfiguration
     # Custom pages configuration property
     ConfigurationProperty.property(name: :custom_pages, default_value: {}),
     # Support ticket configuration property
-    ConfigurationProperty.property(name: :support_ticket, default_value: {})
+    ConfigurationProperty.property(name: :support_ticket, default_value: {}),
+
+    # Support url configuration property
+    ConfigurationProperty.property(name: :support_url, read_from_env: true),
+
+    # Docs url configuration property
+    ConfigurationProperty.property(name: :docs_url, read_from_env: true)
   ].freeze
 
   def initialize(request_hostname: nil)

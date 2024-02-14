@@ -32,11 +32,11 @@ module ApplicationHelper
   end
 
   def support_url
-    ENV['OOD_DASHBOARD_SUPPORT_URL']
+    @user_configuration.support_url
   end
 
   def docs_url
-    ENV['OOD_DASHBOARD_DOCS_URL']
+    @user_configuration.docs_url
   end
 
   def configure_2fa_url
