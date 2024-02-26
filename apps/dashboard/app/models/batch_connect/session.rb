@@ -87,7 +87,7 @@ module BatchConnect
     # Attributes used for serialization
     # @return [Hash] attributes to be serialized
     def attributes
-      %w(id cluster_id job_id created_at token title script_type cache_completed).map do |attribute|
+      %w(id cluster_id job_id created_at token title script_type cache_completed modified_at).map do |attribute|
         [ attribute, nil ]
       end.to_h
     end
